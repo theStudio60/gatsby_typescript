@@ -1,10 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql, a } from "gatsby"
-
-     
-
-
-
 interface Props {
   children: ReactNode
 }

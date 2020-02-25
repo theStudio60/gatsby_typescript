@@ -31,7 +31,6 @@ const Layout = ({ children } : Props ) => {
       }
     }
   `)
-
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
