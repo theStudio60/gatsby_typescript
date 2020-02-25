@@ -11,71 +11,43 @@ export default class Header extends React.Component<Props> {
     return(
     <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `white`,
+     // marginBottom: 64,
     }}
     >
       <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 1280,
-        padding: `1.45rem`,
+        margin: `0  `,
+        maxHeight:64,
+        maxWidth:960,
+        padding:`16px 16px 0px 16px`,
       }}
       >
-        <h1 style={{ margin: 0 }}>
-          <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-          >
-          {siteTitle}
+        <h1 style={{ margin: 0 , fontSize:32}}>
+          <Link to="/" style={{color:`#000`,}}>
+            {siteTitle}
           </Link>
         </h1>
         <div
         style={{
-        margin: `0 auto`,
-        maxWidth: 1280,
+        margin: `0 auto`, 
         paddingTop: `1.45rem`,
+        
         }}
         >
-        <Link
-         to="/"
-         style={{ 
-          color:`white`,
-          textDecoration: `none`,
-          textTransform: `uppercase`,
-          marginRight:`1.45rem`
-         }}
-        >
-        Home
-        </Link>
-         
-        <Link
-         to="/about/"
-         style={{ 
-          color:`white`,
-          textDecoration: `none`,
-          textTransform: `uppercase`,
-          marginRight:`1.45rem`
-          
-         }}
-        >
-        About
-        </Link>
-        <Link
-         to="/contact/"
-         style={{ 
-          color:`white`,
-          textDecoration: `none`,
-          textTransform: `uppercase`,
-          marginRight:`1.45rem`
-         }}
-        >
-        Contact
-        </Link>
-      </div>
+          <Link to="/" style={{ marginRight:`0.7rem`  }} >
+          Home
+          </Link>
+          <Link to="/about/" style={{   marginRight:`0.7rem`   }} >
+          about
+          </Link>
+          <Link to="/blog/" style={{   marginRight:`0.7rem`   }} >
+          blog
+          </Link>
+          <Link to="/contact/" style={{ marginRight:`0.7rem`   }}>
+          Contact
+          </Link>          
+        </div> 
       </div>
     </header>
     )

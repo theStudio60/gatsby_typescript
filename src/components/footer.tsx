@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, a } from "gatsby"
 
      
 
@@ -23,25 +23,51 @@ const Footer = ({ children } : Props ) => {
 
   return (
     <>
-      <footer>
-        <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1280,
-          padding: `1.45rem`,
-          backgroundColor:`#eeeeee`,
-        }}
+    <footer>
+      <div style={{
+      background: `white`,
+      //marginTop: `1.45rem`,
+      marginBottom: `0rem`,
+      padding: `1.45rem`,
+      color: `black`,
+      }}
+      >
+        <strong style={{
+          paddingBottom:16,
+        }}>
+          {data.site.siteMetadata.title} - © {new Date().getFullYear()} - <a href="https://studio60.ch"> {data.site.siteMetadata.author} </a>
+        </strong>
+        <br/>
+        {` `}
+
+        <a
+         href="https://www.gatsbyjs.org"
+         style={{  marginRight:`0.7rem`  }}
         >
-          © {new Date().getFullYear()} - Created by <a href="https://studio60.ch"> {data.site.siteMetadata.author} </a>
-          {` `}
-          <br/>
-          <a href="https://www.gatsbyjs.org">Gatsby JS</a>
-          |
-          <a href="https://www.typescriptlang.org/">Typescript Language</a>
-          |
-          <a href="https://www.reactjs.org/">React JS</a>
+         Gatsby JS
+        </a>
+        <a
+         href="https://www.typescriptlang.org/"
+         style={{  marginRight:`0.7rem`  }}
+        >
+         Typescript Language
+        </a>
+        <a
+         href="https://www.reactjs.org/"
+         style={{  marginRight:`0.7rem`  }}
+        >
+         React JS
+        </a>  
+        <br/>      
+        <a
+         href="https://github.com/theStudio60/gatsby_typescript"
+         style={{  marginRight:`0.7rem`  }}
+        >
+         See this project repository on github !
+        </a>   
+        
         </div>
-      </footer>
+    </footer>
     </>
   )
 }

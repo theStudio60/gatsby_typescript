@@ -37,14 +37,18 @@ const Layout = ({ children } : Props ) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          minHeight: `80vh`,
-          padding: `1.45rem`,
+          margin:0,
+          padding: `16px  `,
+          minHeight: `100vh`,
+          backgroundColor:`lightblue`,
         }}
       >
-        <main>{children}</main>
-
+        <main style={{
+          maxWidth: 1280,
+          margin:`64px auto 64px auto`,
+          }}>
+          {children}
+        </main>
       </div>
       <Footer/>
     </>

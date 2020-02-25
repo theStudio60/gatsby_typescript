@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `S60 Gatsby by Typescript Starter Kit`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Gastby60`,
+    description: `This is a starter kit to build static websites using ReactJS, GatsbyJS and TypeScript`,
     author: `STUDIO60`,
     author_url: `https://www.studio60.ch`,
 
@@ -17,6 +17,12 @@ module.exports = {
     about_page_title: `About This Starter Kit`,
     about_page_subtitle: `This is a starter kit to build static websites with Gatsby and TypeScript`,
     about_page_intro: `At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi.`,
+
+    blog_page_link: `blog`,
+
+    blog_page_title: `Our Blog`,
+    blog_page_subtitle: `This is a starter kit to build static websites using ReactJS, GatsbyJS and TypeScript`,
+    blog_page_intro: `Posts will show up on this page`,
  
 
     contact_page_link: `contact`,
@@ -51,6 +57,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
