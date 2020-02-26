@@ -11,16 +11,19 @@ export default class Header extends React.Component<Props> {
     return(
     <header
     style={{
-      background: `white`,
-     // marginBottom: 64,
+      background: `white`, 
+        position:`fixed`,
+        width:`100vw`,
+        zIndex:100,
     }}
     >
-      <div
-      style={{
-        margin: `0  `,
+      <div style=
+      {{
+        margin: 0,
         maxHeight:64,
         maxWidth:960,
-        padding:`16px 16px 0px 16px`,
+        padding:16,
+        display:`flex`,
       }}
       >
         <h1 style={{ margin: 0 , fontSize:32}}>
@@ -30,21 +33,44 @@ export default class Header extends React.Component<Props> {
         </h1>
         <div
         style={{
-        margin: `0 auto`, 
-        paddingTop: `1.45rem`,
-        
+         marginTop:8,
+         marginLeft:`0.7rem`,
         }}
         >
-          <Link to="/" style={{ marginRight:`0.7rem`  }} >
+          <Link
+          to="/" 
+          style={{
+             marginRight:`0.7rem`,
+             fontSize:16, 
+           }}
+          >
           Home
           </Link>
-          <Link to="/about/" style={{   marginRight:`0.7rem`   }} >
+          <Link
+          to="/about/" 
+          style={{ 
+              marginRight:`0.7rem`,
+              fontSize:16,  
+           }} 
+          >
           about
           </Link>
-          <Link to="/blog/" style={{   marginRight:`0.7rem`   }} >
+          <Link
+          to="/blog/" 
+          style={{ 
+              marginRight:`0.7rem`,
+              fontSize:16,  
+           }} 
+          >
           blog
           </Link>
-          <Link to="/contact/" style={{ marginRight:`0.7rem`   }}>
+          <Link
+          to="/contact/" 
+          style={{
+             marginRight:`0.7rem`,
+             fontSize:16, 
+            }}
+          >
           Contact
           </Link>          
         </div> 

@@ -8,6 +8,7 @@ module.exports = {
     
     homepage_link: `home`,
 
+    homepage_image: `./image.jpg`,
     homepage_title: `Hola World !!`,
     homepage_subtitle: `This is a starter kit to build static websites using ReactJS, GatsbyJS and TypeScript`,
     homepage_intro: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -20,8 +21,8 @@ module.exports = {
 
     blog_page_link: `blog`,
 
-    blog_page_title: `Our Blog`,
-    blog_page_subtitle: `This is a starter kit to build static websites using ReactJS, GatsbyJS and TypeScript`,
+    blog_page_title: `Blog`,
+    blog_page_subtitle: ` `,
     blog_page_intro: `Posts will show up on this page`,
  
 
@@ -57,8 +58,22 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `node-sass`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
+    {
+    resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    {
+    resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -26,7 +26,7 @@ const IndexPage = ({ children } : Props ) => {
       <h3>  {data.site.siteMetadata.homepage_subtitle} </h3>
       <p>   {data.site.siteMetadata.homepage_intro} </p>
       <br/>
-      <div style={{ maxWidth: `960px`, marginBottom: `1.45rem` }}>
+      <div style={{ maxWidth: `960px`, position:`relative`,}}>
         <Image />
       </div>
     </Layout>
