@@ -2,7 +2,7 @@ import React, { ReactNode } from "react"
 import PropTypes from "prop-types"
 import {  useStaticQuery, graphql} from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
+import HomepageImage from "../components/homepage-image"
 import SEO from "../components/seo"
 interface Props {
   children: ReactNode
@@ -27,7 +27,7 @@ const IndexPage = ({ children } : Props ) => {
       <p>   {data.site.siteMetadata.homepage_intro} </p>
       <br/>
       <div style={{ maxWidth: `960px`, position:`relative`,}}>
-        <Image />
+        <HomepageImage />
       </div>
     </Layout>
   ) 

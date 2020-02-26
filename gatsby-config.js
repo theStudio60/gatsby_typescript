@@ -1,3 +1,4 @@
+const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Gastby60`,
@@ -12,6 +13,7 @@ module.exports = {
     homepage_intro: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
  
     about_page_link: `about`,
+    about_page_image: `image.jpg`,
     about_page_title: `About This Starter Kit`,
     about_page_subtitle: `This is a starter kit to build static websites with Gatsby and TypeScript`,
     about_page_intro: `At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi.`,
